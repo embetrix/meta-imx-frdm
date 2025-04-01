@@ -3,7 +3,7 @@ header:
 machine: "imx91frdm"
 distro: poky
 target:
-  - core-image-minimal
+  - core-image-full-cmdline
 repos:
   # It's current revision will be used to perform the build.
   meta-imx-frdm:
@@ -58,7 +58,7 @@ local_conf_header:
     CONF_VERSION = "2"
     INHERIT += "rm_work"
     PACKAGE_CLASSES = "package_deb"
-    DISTRO_FEATURES += "systemd usrmerge wifi oqs"
+    DISTRO_FEATURES += "systemd usrmerge wifi"
     VIRTUAL-RUNTIME_init_manager = "systemd"
     DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
   debug-tweaks: |
