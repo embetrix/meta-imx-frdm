@@ -1,7 +1,6 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${BPN}:"
 
 SRC_URI += " \
-        file://0001-gpio-pca953x-fix-pca953x_irq_bus_sync_unlock-race.patch \
         file://0002-arm64-dts-add-i.MX93-11x11-FRDM-basic-support.patch \
         file://0003-arm64-dts-add-imx93-11x11-frdm-mt9m114-dts.patch \
         file://0004-Add-DSI-Panel-for-imx93.patch \
@@ -20,5 +19,4 @@ SRC_URI += " \
         file://0017-arm64-dts-add-imx91-11x11-frdm-aud-hat-dts.patch \
         file://0018-arm64-dts-add-imx91-11x11-frdm-8mic.dts-and-fix-imx9.patch \
         file://0019-arm64-dts-add-imx91-11x11-frdm-lpuart.dts.patch \
-        file://0020-LF-13459-clk-imx-Fix-the-pll-power-up-flow.patch \
 "
